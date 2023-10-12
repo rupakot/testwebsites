@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.493);
+}
+
+/* Clearfix */
+.container::after,
+.container::before {
+  display: table;
+  content: "";
+  line-height: 0;
+  font-size: 0;
+  clear: both;
+}
+
+/* Container */
+.container {
+  width: 50%;
+  margin: 1em auto;
+  border: 5px solid #000000;
+  padding: 0.3em 0.6em;
+}
+
+.container p {
+  font-size: 1.2em;
+  color: #000000;
+  margin-bottom: 1.5em;
+  font-family: Arial;
+}
+
+/* Group Header */
+.group-header {
+  float: right;
+  font-weight: 700;
+  width: 20%;
+  margin: 0.7em 0 1em 0;
+}
+
+.group-header span {
+  float: left;
+  width: 50%;
+  text-align: center;
+  display: block;
+}
+
+/* H3 */
+h3::after,
+h3::before {
+  display: table;
+  content: "";
+  line-height: 0;
+  font-size: 0;
+  clear: both;
+}
+
+h3 {
+  position: relative;
+  font-weight: 700;
+  margin: 0.7em 0 1em 0;
+}
+
+h3 span {
+  float: left;
+  width: 10%;
+  text-align: center;
+  display: block;
+}
+
+h3 span:first-child {
+  width: 40%;
+  text-align: left;
+}
+
+h3 .dots {
+  width: 40%;
+  border-bottom: 2px dotted #000000;
+  margin-top: 0.8em;
+}
+
+.dots {
+  display: block;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .header__menu {
+    flex-wrap: wrap;
+  }
+
+  .header__item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .header__link::after {
+    display: none;
+  }
+
+  .group-header {
+    float: none;
+    width: 100%;
+  }
+
+  h3 span:first-child {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+.float-right {
+  float: right;
+}
+
+.fa {
+  font-size: .8em;
+  line-height: 22px !important;
+}
+
+dropdown {
+  display: inline-block;
+  margin: 20px 50px;
+}
+
+dropdown label,
+dropdown ul li {
+  display: block;
+  width: 200px;
+  background: #ECF0F1;
+  padding: 15px 20px;
+}
+
+dropdown label:hover,
+dropdown ul li:hover {
+  background: #1ABC9C;
+  color: white;
+  cursor: pointer;
+}
+
+dropdown label {
+  color: #1ABC9C;
+  border-left: 4px solid #1ABC9C;
+  border-radius: 0 5px 0 0;
+  position: relative;
+  z-index: 2;
+}
+
+dropdown input {
+  display: none;
+}
+
+dropdown input ~ ul {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  top: -20px;
+  z-index: 1;
+}
+
+dropdown input:checked + label {
+  background: #1ABC9C;
+  color: rgb(255, 255, 255);
+}
+
+dropdown input:checked ~ ul {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+}
+
+.animate {
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  /* Chrome and Safari */
+  -moz-backface-visibility: hidden;
+  /* Firefox */
+  -ms-backface-visibility: hidden;
+  /* Internet Explorer */
+}
+
+header {
+  background-color: rgba(218, 179, 70, 0.187);
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
